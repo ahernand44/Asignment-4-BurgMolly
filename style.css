@@ -8,3 +8,61 @@
 }
 
 /* START BELOW */
+* Make the page readable */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+/* Give every major block a visible boundary */
+header,
+section,
+footer {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Tell the nav/header and footer apart from the rest */
+header {
+  background: #455f8d;
+}
+
+footer {
+  border-style: dashed;
+  background: #2a6ba8;
+}
+section {
+  background-color: aqua;
+}
+/* Put the nav links in bullets */
+section ul {
+  background-color: aqua;
+  list-style: none;
+  padding: 1rem;
+}
+
+nav li {
+  background-color: aqua;
+  display: inline;
+  margin-right: 1rem;
+}
+
+/* Show the project boxes inside the projects section */
+article {
+  border: 1px dotted #999;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* A little breathing room under headings and buttons */
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  margin-top: 0.5rem;
+}
