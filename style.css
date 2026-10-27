@@ -37,6 +37,7 @@ nav {
 }
 
 header {
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   background: #455f8d;
   page {
   display: grid;
@@ -94,4 +95,10 @@ h3 {
 
 button {
   margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .page {
+    padding: 0.5rem;
+  }
 }
