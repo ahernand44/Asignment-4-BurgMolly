@@ -19,3 +19,8 @@
 | Sewing 101 | Section heading | Sewing 101 | Introduces basic sewing information |
 | Sewing 101 | Supporting text | [Existing supporting text or short explanation] | Helps beginners know where to start |
 | Footer | Copyright | © 2026 Every Stitch. All rights reserved. | Provides ownership and copyright information |
+
+
+## What the grid did when the content grew
+
+When I added content, my grid system changed quite a bit. The page used to be more split up, but after adding the content and removing the fixed heights, it became more of a scrolling page. Some sections needed more space to fit their content, which changed the overall layout

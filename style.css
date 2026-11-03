@@ -15,8 +15,8 @@ img {
 /* Make the page readable */
 body {
   font-family: system-ui, sans-serif;
-  line-height: 1.5;
-  padding: 1rem;
+  line-height: auto;
+  padding: 3rem;
 }
 
 /* The grid wrapper (only written once) */
@@ -31,7 +31,7 @@ nav,
 header,
 section,
 footer {
-  border: 1px solid #ccc;
+  border: .5px solid #252525;
   padding: 1rem;
 }
 
@@ -40,7 +40,12 @@ nav {
   grid-column: 1 / 13;
 }
 
-header { background: #455f8d; grid-column: 1 / 13; } .testimonial { background-color: aqua; grid-column: 1 / 7; } .projects { background-color: aqua; grid-column: 7 / 13; } footer { border-style: dashed; background: #2a6ba8; grid-column: 1 / 13; }
+header { background: #252d20; grid-column: 1 / -1; } 
+.testimonials
+{ background-color: #252d20; grid-column: 2/7; }
+ .projects 
+ { background-color: rgb(53, 34, 43); grid-column: 7 / 13; } 
+ footer { border-style: dashed; background: #252d20; grid-column: 1 / 13; }
 
 
 /* Space out the nav links */
@@ -50,7 +55,7 @@ nav a {
 
 /* Show the project boxes inside the projects section */
 article {
-  border: 1px dotted #999;
+  border: 1px dotted #888080;
   padding: 1rem;
   margin-top: 1rem;
 }
@@ -59,14 +64,20 @@ article {
 h1,
 h2,
 h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1 rem;
+}
+
+*, ::before, ::after {
+    margin: 3;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 button {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 574px) {
+@media (max-width: 700px) {
   /* replace 820 with YOUR number */
 
 }
