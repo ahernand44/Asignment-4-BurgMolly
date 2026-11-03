@@ -8,7 +8,7 @@
 }
 
 /* START BELOW */
-* Make the page readable */
+/* Make the page readable */
 body {
   font-family: system-ui, sans-serif;
   line-height: 1.5;
@@ -36,43 +36,8 @@ nav {
   grid-column: 1 / 13;
 }
 
-header {
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  background: #455f8d;
-  page {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-  grid-column: 1 / 13;
-}
+header { background: #455f8d; grid-column: 1 / 13; } .testimonial { background-color: aqua; grid-column: 1 / 7; } .projects { background-color: aqua; grid-column: 7 / 13; } footer { border-style: dashed; background: #2a6ba8; grid-column: 1 / 13; }
 
-.testimonial {
-  background-color: aqua;
-  {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-  grid-column: 1 / 7;
-}
-
-.projects {
-  background-color: aqua;
-   {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-  grid-column: 7 / 13;
-}
-
-footer {
-  border-style: dashed;
-  background: #2a6ba8;
- {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
-  grid-column: 1 / 13;
-}
 
 /* Space out the nav links */
 nav a {
@@ -97,8 +62,8 @@ button {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 900px) {
-  .page {
-    padding: 0.5rem;
-  }
+@media (max-width: 574px) {
+  /* replace 820 with YOUR number */
+
 }
+
