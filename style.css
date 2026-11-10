@@ -41,7 +41,7 @@ nav {
 }
 
 header { background: #252d20; grid-column: 1 / -1; } 
-.testimonials
+.testimonial
 { background-color: #252d20; grid-column: 2/7; }
  .projects 
  { background-color: rgb(53, 34, 43); grid-column: 7 / 13; } 
