@@ -1,4 +1,17 @@
-/* === RESET === */
+:root {
+  --color-primary: #252d20;     /* dark green: testimonial, footer, borders */
+  --color-accent: #ecc59c;      /* peach: header, projects, text on dark */
+  --color-border: #888080;      /* dotted project borders */
+  --color-text: #000000;
+  --color-background: #ffffff;
+
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 3rem;
+
+  --font-heading: system-ui, sans-serif;
+  --font-body: system-ui, sans-serif;
+}
 
 img {
   max-width: 100%;
@@ -8,16 +21,18 @@ img {
 /* START BELOW */
 /* Make the page readable */
 body {
-  font-family: system-ui, sans-serif;
+ font-family: var(--font-body);
   line-height: auto;
-  padding: 3rem;
+  padding: var(--space-l);
+  color: var(--color-text);
+background: var(--color-background);
 }
 
 /* The grid wrapper (only written once) */
 .page {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
+gap: 1rem;  →  gap: var(--space-m);
 }
 
 /* Give every major block a visible boundary */
@@ -25,8 +40,8 @@ nav,
 header,
 section,
 footer {
-  border: .5px solid #252525;
-  padding: 1rem;
+ border: .5px solid var(--color-primary);
+ padding: var(--space-m);
 }
 
 /* Where each block sits on the grid */
@@ -34,21 +49,21 @@ nav {
   grid-column: 1 / 13;
 }
 
-header { background: #ecc59c; grid-column: 1 / -1; text-align: center; }
+header { background: var(--color-accent); grid-column: 1 / -1; text-align: center; }
 header img { display: block; margin: 0 auto; } 
 .testimonial
-{ background-color: #252d20; grid-column: 1 / 7;
+{background-color: var(--color-primary); grid-column: 1 / 7;
   color: #ecc59c;
   display: flex; flex-direction: column;
   justify-content: center; align-items: center;
   text-align: center; }
  .projects 
- { background-color: #ecc59c; grid-column: 7 / 13; } 
+ { background: var(--color-accent); grid-column: 7 / 13; } 
  .sewing101 {
   grid-column: 1 / -1;
   text-align: center;
 }
-footer { border-style: dashed; background: #252d20; grid-column: 1 / 13; color: #ecc59c; }
+footer { border-style: dashed; background: var(--color-primary); grid-column: 1 / 13; color: #ecc59c; }
 
 
 /* Space out the nav links */
