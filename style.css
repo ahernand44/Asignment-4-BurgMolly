@@ -1,14 +1,8 @@
 /* === RESET === */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 img {
   max-width: 100%;
-  height: auto;
+  height: 1.5;
 }
 
 /* START BELOW */
@@ -40,24 +34,33 @@ nav {
   grid-column: 1 / 13;
 }
 
-header { background: #252d20; grid-column: 1 / -1; } 
+header { background: #ecc59c; grid-column: 1 / -1; text-align: center; }
+header img { display: block; margin: 0 auto; } 
 .testimonial
-{ background-color: #252d20; grid-column: 2/7; }
+{ background-color: #252d20; grid-column: 1 / 7;
+  color: #ecc59c;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  text-align: center; }
  .projects 
- { background-color: rgb(53, 34, 43); grid-column: 7 / 13; } 
- footer { border-style: dashed; background: #252d20; grid-column: 1 / 13; }
+ { background-color: #ecc59c; grid-column: 7 / 13; } 
+ .sewing101 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+footer { border-style: dashed; background: #252d20; grid-column: 1 / 13; color: #ecc59c; }
 
 
 /* Space out the nav links */
 nav a {
-  margin-right: 1rem;
+  margin-right: 1 rem;
 }
 
 /* Show the project boxes inside the projects section */
 article {
-  border: 1px dotted #888080;
-  padding: 1rem;
-  margin-top: 1rem;
+  border: 1 px dott ed #888080;
+  padding: 1 rem;
+  margin-top: 1 rem;
 }
 
 /* A little breathing room under headings and buttons */
