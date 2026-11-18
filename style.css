@@ -32,7 +32,7 @@ background: var(--color-background);
 .page {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-gap: 1rem;  →  gap: var(--space-m);
+gap: 1 rem;  →  gap; var(--space-m);
 }
 
 /* Give every major block a visible boundary */
@@ -51,6 +51,20 @@ nav {
 
 header { background: var(--color-accent); grid-column: 1 / -1; text-align: center; }
 header img { display: block; margin: 0 auto; } 
+.projectpage {
+  grid-column: 1 / -1;   /* span all 12 columns */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3vw;
+
+  @media (max-width: 600px) {
+  .projectpage {
+    grid-template-columns: 1fr;
+  }
+}
 .testimonial
 {background-color: var(--color-primary); grid-column: 1 / 7;
   color: #ecc59c;
